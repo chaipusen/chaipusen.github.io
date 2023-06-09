@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/06/07/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2023/06/09/spark standalone环境部署/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hello World - Hexo</title>
+  <title>StandAlone - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/06/07/hello-world/index.html">
+<meta property="og:title" content="StandAlone">
+<meta property="og:url" content="http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="spark（StandAlone环境部署）1.进入到spark的配置文件目录中1cd  spark&#x2F;conf 改名, 去掉后面的.template后缀1mv workers.template workers  2.编辑worker文件1vim workers 将里面的localhost删除, 添加到workers文件内123node1node2node3  3.配置spark-env.sh文件1.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-06-07T00:33:07.996Z">
-<meta property="article:modified_time" content="2023-06-07T00:33:07.996Z">
+<meta property="article:published_time" content="2023-06-09T05:14:40.975Z">
+<meta property="article:modified_time" content="2023-06-09T05:44:09.811Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1686278084448),
+    lastupdate: new Date(1686292160044),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/07/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/09/spark StandAlone环境部署/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2463,7 +2463,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World
+        StandAlone
       </h1>
       <div class='new-meta-box'>
         
@@ -2485,10 +2485,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-06-07T08:33:07+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-06-09T13:14:40+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 7, 2023</p>
+    <p>发布于：Jun 9, 2023</p>
   </a>
 </div>
 
@@ -2511,19 +2511,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <h1 id="spark（StandAlone环境部署）"><a href="#spark（StandAlone环境部署）" class="headerlink" title="spark（StandAlone环境部署）"></a>spark（StandAlone环境部署）</h1><h2 id="1-进入到spark的配置文件目录中"><a href="#1-进入到spark的配置文件目录中" class="headerlink" title="1.进入到spark的配置文件目录中"></a>1.进入到spark的配置文件目录中</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  spark/conf</span><br></pre></td></tr></table></figure>
+<h3 id="改名-去掉后面的-template后缀"><a href="#改名-去掉后面的-template后缀" class="headerlink" title="改名, 去掉后面的.template后缀"></a>改名, 去掉后面的.template后缀</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv workers.template workers</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/45.png" class="lazyload" data-srcset="/../images/45.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 44"></p>
+<h2 id="2-编辑worker文件"><a href="#2-编辑worker文件" class="headerlink" title="2.编辑worker文件"></a>2.编辑worker文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim workers</span><br></pre></td></tr></table></figure>
+<h3 id="将里面的localhost删除-添加到workers文件内"><a href="#将里面的localhost删除-添加到workers文件内" class="headerlink" title="将里面的localhost删除, 添加到workers文件内"></a>将里面的localhost删除, 添加到workers文件内</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node1</span><br><span class="line">node2</span><br><span class="line">node3</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/46.png" class="lazyload" data-srcset="/../images/46.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 45"></p>
+<h2 id="3-配置spark-env-sh文件"><a href="#3-配置spark-env-sh文件" class="headerlink" title="3.配置spark-env.sh文件"></a>3.配置spark-env.sh文件</h2><h3 id="1-改名"><a href="#1-改名" class="headerlink" title="1.改名"></a>1.改名</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv spark-env.sh.template spark-env.sh</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/47.png" class="lazyload" data-srcset="/../images/47.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 46"></p>
+<h3 id="2-编辑spark-env-sh-在底部追加如下内容"><a href="#2-编辑spark-env-sh-在底部追加如下内容" class="headerlink" title="2. 编辑spark-env.sh, 在底部追加如下内容"></a>2. 编辑spark-env.sh, 在底部追加如下内容</h3><p><img src="/../images/48.png" class="lazyload" data-srcset="/../images/48.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 47"></p>
+<h3 id="3-在HDFS上创建程序运行历史记录存放的文件夹"><a href="#3-在HDFS上创建程序运行历史记录存放的文件夹" class="headerlink" title="3.在HDFS上创建程序运行历史记录存放的文件夹:"></a>3.在HDFS上创建程序运行历史记录存放的文件夹:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hadoop fs -mkdir /sparklog</span><br><span class="line">hadoop fs -chmod 777 /sparklog</span><br></pre></td></tr></table></figure>
+<h2 id="4-配置spark-defaults-conf文件"><a href="#4-配置spark-defaults-conf文件" class="headerlink" title="4.配置spark-defaults.conf文件"></a>4.配置spark-defaults.conf文件</h2><h3 id="1-改名-1"><a href="#1-改名-1" class="headerlink" title="1. 改名"></a>1. 改名</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv spark-defaults.conf.template spark-defaults.conf</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/49.png" class="lazyload" data-srcset="/../images/49.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 48"></p>
+<h3 id="2-修改内容"><a href="#2-修改内容" class="headerlink" title="2. 修改内容"></a>2. 修改内容</h3><p><img src="/../images/50.png" class="lazyload" data-srcset="/../images/50.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 49"></p>
+<h2 id="5-配置log4j-properties-文件"><a href="#5-配置log4j-properties-文件" class="headerlink" title="5.配置log4j.properties 文件"></a>5.配置log4j.properties 文件</h2><h3 id="1-改名-2"><a href="#1-改名-2" class="headerlink" title="1.改名"></a>1.改名</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv log4j.properties.template log4j.properties</span><br></pre></td></tr></table></figure>
+<h3 id="2-将Spark安装文件夹-分发到其它的服务器上"><a href="#2-将Spark安装文件夹-分发到其它的服务器上" class="headerlink" title="2.将Spark安装文件夹  分发到其它的服务器上"></a>2.将Spark安装文件夹  分发到其它的服务器上</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp -r spark-3.1.2-bin-hadoop3.2 node2:/export/server/</span><br><span class="line"></span><br><span class="line">scp -r spark-3.1.2-bin-hadoop3.2 node3:/export/server/</span><br></pre></td></tr></table></figure>
+<h3 id="3-分别在node2，node3设置软连接："><a href="#3-分别在node2，node3设置软连接：" class="headerlink" title="3.分别在node2，node3设置软连接："></a>3.分别在node2，node3设置软连接：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /export/server/spark-3.1.2-bin-hadoop3.2 /export/server/spark</span><br></pre></td></tr></table></figure>
+<h3 id="4-启动历史服务器"><a href="#4-启动历史服务器" class="headerlink" title="4.启动历史服务器"></a>4.启动历史服务器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/start-history-server.sh</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/51.png" class="lazyload" data-srcset="/../images/51.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 50"></p>
+<p><img src="/../images/52.png" class="lazyload" data-srcset="/../images/52.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 51"><br>启动Spark的Master和Worker进程</p>
+<h3 id="5-启动全部master和worker"><a href="#5-启动全部master和worker" class="headerlink" title="5.启动全部master和worker"></a>5.启动全部master和worker</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/start-all.sh</span><br></pre></td></tr></table></figure>
+<h3 id="6-或者可以一个个启动"><a href="#6-或者可以一个个启动" class="headerlink" title="6.或者可以一个个启动:"></a>6.或者可以一个个启动:</h3><h3 id="7-启动当前机器的master"><a href="#7-启动当前机器的master" class="headerlink" title="7.启动当前机器的master"></a>7.启动当前机器的master</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/start-master.sh</span><br></pre></td></tr></table></figure>
+<h3 id="8-启动当前机器的worker"><a href="#8-启动当前机器的worker" class="headerlink" title="8.启动当前机器的worker"></a>8.启动当前机器的worker</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/start-worker.sh</span><br></pre></td></tr></table></figure>
+<h3 id="9-停止全部"><a href="#9-停止全部" class="headerlink" title="9.停止全部"></a>9.停止全部</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/stop-all.sh</span><br></pre></td></tr></table></figure>
+<h3 id="10-停止当前机器的master"><a href="#10-停止当前机器的master" class="headerlink" title="10.停止当前机器的master"></a>10.停止当前机器的master</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/stop-master.sh</span><br></pre></td></tr></table></figure>
+<h3 id="11-停止当前机器的worker"><a href="#11-停止当前机器的worker" class="headerlink" title="11.停止当前机器的worker"></a>11.停止当前机器的worker</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbin/stop-worker.sh</span><br></pre></td></tr></table></figure>
+<h3 id="12-查看Master的WEB-UI"><a href="#12-查看Master的WEB-UI" class="headerlink" title="12.查看Master的WEB UI"></a>12.查看Master的WEB UI</h3><p><img src="/../images/53.png" class="lazyload" data-srcset="/../images/53.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 52"></p>
+<h3 id="13-连接到StandAlone集群"><a href="#13-连接到StandAlone集群" class="headerlink" title="13.连接到StandAlone集群"></a>13.连接到StandAlone集群</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/pyspark --master spark:/node1:7077     </span><br></pre></td></tr></table></figure>
+<p><img src="/../images/54.png" class="lazyload" data-srcset="/../images/54.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 53"></p>
+<h3 id="14-查看历史服务器WEB-UI"><a href="#14-查看历史服务器WEB-UI" class="headerlink" title="14.查看历史服务器WEB UI"></a>14.查看历史服务器WEB UI</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入:</span><br><span class="line">node1:18080</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/55.png" class="lazyload" data-srcset="/../images/55.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 54"></p>
 
   </div>
   
@@ -2548,10 +2565,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-07T08:33:07+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-09T13:44:09+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 7, 2023</p>
+    <p>更新于：Jun 9, 2023</p>
   </a>
 </div>
 
@@ -2570,7 +2587,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/06/07/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/&title=StandAlone - Hexo&summary="
           
           >
           
@@ -2582,7 +2599,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/06/07/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/&title=StandAlone - Hexo&summary="
           
           >
           
@@ -2594,7 +2611,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/06/07/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/&title=StandAlone - Hexo&summary="
           
           >
           
@@ -2627,11 +2644,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/06/09/Hive%E5%AE%89%E8%A3%85/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Jun 7, 2023</p>
-          <p class='content'>Hive安装（1）mysql的部署1.下载并安装MySQL官方的 Yum Repository1wget-i-chttp://dev.mysql.com/get/mysql57-communit...</p>
+        <a class='prev' href='/2023/06/09/spark%EF%BC%88YARN%E6%A8%A1%E5%BC%8F%EF%BC%89/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>YARN</p>
+          <p class='content'>1.Spark On YARN 环境搭建1.确保HADOOP_CONF_DIR和YARN_CONF_DIR的环境变量正确；
+2.启动HDFS集群，zookeeper和StandAlone集群，并...</p>
         </a>
       
+      
+        <a class='next' href='/2023/06/09/%E5%AE%89%E8%A3%85docker/'>
+          <p class='title'>Jun 9, 2023<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>安装docker</p>
+        </a>
       
     </div>
   
@@ -2649,7 +2672,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/06/07/hello-world/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2691,7 +2714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%BF%9B%E5%85%A5%E5%88%B0spark%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E4%B8%AD"><span class="toc-text">1.进入到spark的配置文件目录中</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%90%8D-%E5%8E%BB%E6%8E%89%E5%90%8E%E9%9D%A2%E7%9A%84-template%E5%90%8E%E7%BC%80"><span class="toc-text">改名, 去掉后面的.template后缀</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BC%96%E8%BE%91worker%E6%96%87%E4%BB%B6"><span class="toc-text">2.编辑worker文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E9%87%8C%E9%9D%A2%E7%9A%84localhost%E5%88%A0%E9%99%A4-%E6%B7%BB%E5%8A%A0%E5%88%B0workers%E6%96%87%E4%BB%B6%E5%86%85"><span class="toc-text">将里面的localhost删除, 添加到workers文件内</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AEspark-env-sh%E6%96%87%E4%BB%B6"><span class="toc-text">3.配置spark-env.sh文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%94%B9%E5%90%8D"><span class="toc-text">1.改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%BC%96%E8%BE%91spark-env-sh-%E5%9C%A8%E5%BA%95%E9%83%A8%E8%BF%BD%E5%8A%A0%E5%A6%82%E4%B8%8B%E5%86%85%E5%AE%B9"><span class="toc-text">2. 编辑spark-env.sh, 在底部追加如下内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9C%A8HDFS%E4%B8%8A%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%E5%AD%98%E6%94%BE%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">3.在HDFS上创建程序运行历史记录存放的文件夹:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AEspark-defaults-conf%E6%96%87%E4%BB%B6"><span class="toc-text">4.配置spark-defaults.conf文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%94%B9%E5%90%8D-1"><span class="toc-text">1. 改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9%E5%86%85%E5%AE%B9"><span class="toc-text">2. 修改内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%85%8D%E7%BD%AElog4j-properties-%E6%96%87%E4%BB%B6"><span class="toc-text">5.配置log4j.properties 文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%94%B9%E5%90%8D-2"><span class="toc-text">1.改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B0%86Spark%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%E5%A4%B9-%E5%88%86%E5%8F%91%E5%88%B0%E5%85%B6%E5%AE%83%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A"><span class="toc-text">2.将Spark安装文件夹  分发到其它的服务器上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E5%88%AB%E5%9C%A8node2%EF%BC%8Cnode3%E8%AE%BE%E7%BD%AE%E8%BD%AF%E8%BF%9E%E6%8E%A5%EF%BC%9A"><span class="toc-text">3.分别在node2，node3设置软连接：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%90%AF%E5%8A%A8%E5%8E%86%E5%8F%B2%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">4.启动历史服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%90%AF%E5%8A%A8%E5%85%A8%E9%83%A8master%E5%92%8Cworker"><span class="toc-text">5.启动全部master和worker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%88%96%E8%80%85%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%AA%E5%90%AF%E5%8A%A8"><span class="toc-text">6.或者可以一个个启动:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%90%AF%E5%8A%A8%E5%BD%93%E5%89%8D%E6%9C%BA%E5%99%A8%E7%9A%84master"><span class="toc-text">7.启动当前机器的master</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E5%90%AF%E5%8A%A8%E5%BD%93%E5%89%8D%E6%9C%BA%E5%99%A8%E7%9A%84worker"><span class="toc-text">8.启动当前机器的worker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%81%9C%E6%AD%A2%E5%85%A8%E9%83%A8"><span class="toc-text">9.停止全部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%81%9C%E6%AD%A2%E5%BD%93%E5%89%8D%E6%9C%BA%E5%99%A8%E7%9A%84master"><span class="toc-text">10.停止当前机器的master</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E5%81%9C%E6%AD%A2%E5%BD%93%E5%89%8D%E6%9C%BA%E5%99%A8%E7%9A%84worker"><span class="toc-text">11.停止当前机器的worker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E6%9F%A5%E7%9C%8BMaster%E7%9A%84WEB-UI"><span class="toc-text">12.查看Master的WEB UI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E8%BF%9E%E6%8E%A5%E5%88%B0StandAlone%E9%9B%86%E7%BE%A4"><span class="toc-text">13.连接到StandAlone集群</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-%E6%9F%A5%E7%9C%8B%E5%8E%86%E5%8F%B2%E6%9C%8D%E5%8A%A1%E5%99%A8WEB-UI"><span class="toc-text">14.查看历史服务器WEB UI</span></a></li></ol></li></ol>
   </div>
 </section>
 
@@ -3185,7 +3208,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/06/07/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/06/07/hello-world/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/06/07/hello-world/","wordCount":0,"datePublished":"2023-06-07T00:33:07.996Z","dateModified":"2023-06-07T00:33:07.996Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/06/09/spark StandAlone环境部署/","name":"StandAlone"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"StandAlone","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/","wordCount":0,"datePublished":"2023-06-09T05:14:40.975Z","dateModified":"2023-06-09T05:44:09.811Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
