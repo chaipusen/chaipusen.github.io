@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/"/>
+  
+  <link rel="canonical" href="http://example.com/2023/06/19/sqoop/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,15 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive - Hexo</title>
+  <title>sqoop - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="sqoop">
+<meta property="og:url" content="http://example.com/2023/06/19/sqoop/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="sqoop（一）sqoop介绍Apache Sqoop是在Hadoop生态体系和RDBMS体系&#96;之间传送数据的一种工具。 Sqoop工作机制是将导入或导出命令翻译成mapreduce程序来实现。在翻译出的mapreduce中主要是对inputformat和outputformat进行定制。 站在Apache立场看待数据流转问题，可以分为数据的导入导出：  Import：数据导入。RDBMS">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-06-19T01:14:06.063Z">
+<meta property="article:modified_time" content="2023-06-19T01:25:18.576Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2099,7 +2103,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2164,7 +2168,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2431,250 +2435,311 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  dock" id='half'>
-        
-  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">Volantis</p>
-    
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/v4/getting-started/"
-              
-              
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
-            </a>
-          
-            <a href="/faqs/"
-              
-              
-              active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
-            </a>
-          
-            <a href="/examples/"
-              
-              
-              active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2023</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/19/sqoop/">
-									<time>06-19</time>
-									
-										sqoop
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/19/Flume/">
-									<time>06-19</time>
-									
-										Flume
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/13/docker/">
-									<time>06-13</time>
-									
-										docker
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/spark(Pyspark)/">
-									<time>06-09</time>
-									
-										Spark(PySPARK)基础编码环境
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/spark%EF%BC%88YARN%E6%A8%A1%E5%BC%8F%EF%BC%89/">
-									<time>06-09</time>
-									
-										YARN
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/spark%20StandAlone%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">
-									<time>06-09</time>
-									
-										StandAlone
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/spark%20local%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">
-									<time>06-09</time>
-									
-										local
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/Git%E5%AE%89%E8%A3%85/">
-									<time>06-09</time>
-									
-										git
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/09/Hive%E5%AE%89%E8%A3%85/">
-									<time>06-09</time>
-									
-										Hive
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/07/spark(HA)%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">
-									<time>06-07</time>
-									
-										HA
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/19/sqoop/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Hexo">
+    <meta itemprop="description" content="">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        sqoop
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-06-19T09:14:06+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 19, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="sqoop"><a href="#sqoop" class="headerlink" title="sqoop"></a>sqoop</h1><h2 id="（一）sqoop介绍"><a href="#（一）sqoop介绍" class="headerlink" title="（一）sqoop介绍"></a>（一）sqoop介绍</h2><p>Apache Sqoop是在Hadoop生态体系和RDBMS体系&#96;之间传送数据的一种工具。</p>
+<p>Sqoop工作机制是将导入或导出命令翻译成mapreduce程序来实现。在翻译出的mapreduce中主要是对inputformat和outputformat进行定制。</p>
+<p>站在Apache立场看待数据流转问题，可以分为数据的导入导出：</p>
+<ul>
+<li>Import：数据导入。RDBMS—&gt;Hadoop</li>
+<li>Export：数据导出。Hadoop—&gt;RDBMS</li>
+</ul>
+<h2 id="（二）sqoop安装"><a href="#（二）sqoop安装" class="headerlink" title="（二）sqoop安装"></a>（二）sqoop安装</h2><p>（备注：安装sqoop的前提是已经具备java、mysql、hadoop和hive环境）</p>
+<h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /export/server</span><br></pre></td></tr></table></figure>
+<h3 id="2-上传压缩包sqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz"><a href="#2-上传压缩包sqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz" class="headerlink" title="2.上传压缩包sqoop-1.4.6.bin__hadoop-2.0.4-alpha.tar.gz"></a>2.上传压缩包sqoop-1.4.6.bin__hadoop-2.0.4-alpha.tar.gz</h3><p>（1） rz -&gt; 选中“sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar.gz”-&gt; 确定</p>
+<p>（2） 直接拖拽到&#x2F;export&#x2F;server路径下</p>
+<h3 id="3-解压sqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz"><a href="#3-解压sqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz" class="headerlink" title="3.解压sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar.gz"></a>3.解压sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar.gz</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar.gz</span><br></pre></td></tr></table></figure>
+<h3 id="4-设置软链接"><a href="#4-设置软链接" class="headerlink" title="4.设置软链接"></a>4.设置软链接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /export/server/sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar /export/server/sqoop</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/201.png" class="lazyload" data-srcset="/../images/201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 201"></p>
+<h3 id="5-配置环境变量"><a href="#5-配置环境变量" class="headerlink" title="5.配置环境变量"></a>5.配置环境变量</h3><p>vim &#x2F;etc&#x2F;profile -&gt; o -&gt; 输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#SQOOP_HOME</span><br><span class="line">export SQOOP_HOME=/export/server/sqoop</span><br><span class="line">export PATH=$PATH:$SQOOP_HOME/bin -&gt; Esc -&gt; :wq</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/202.png" class="lazyload" data-srcset="/../images/202.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 202"></p>
+<h3 id="6-重新加载环境变量"><a href="#6-重新加载环境变量" class="headerlink" title="6.重新加载环境变量"></a>6.重新加载环境变量</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<h3 id="7-配置文件修改："><a href="#7-配置文件修改：" class="headerlink" title="7.配置文件修改："></a>7.配置文件修改：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /export/server/sqoop/conf</span><br><span class="line">mv sqoop-env-template.sh sqoop-env.sh</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/203.png" class="lazyload" data-srcset="/../images/203.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 203"></p>
+<h3 id="8-修改sqoop-env-sh"><a href="#8-修改sqoop-env-sh" class="headerlink" title="8.修改sqoop-env.sh"></a>8.修改sqoop-env.sh</h3><p>vi sqoop-env.sh -&gt; o -&gt; 输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_COMMON_HOME= /export/server/hadoop</span><br><span class="line">export HADOOP_MAPRED_HOME= /export/server/hadoop</span><br><span class="line">export HIVE_HOME= /export/server/hive -&gt; Esc -&gt; :wq</span><br></pre></td></tr></table></figure>
+<h3 id="9-加入mysql的jdbc驱动包"><a href="#9-加入mysql的jdbc驱动包" class="headerlink" title="9.加入mysql的jdbc驱动包"></a>9.加入mysql的jdbc驱动包</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /export/server/hive/lib/mysql-connector-java-5.1.32.jar /export/server/sqoop/</span><br><span class="line">lib/</span><br></pre></td></tr></table></figure>
+<h3 id="10-验证启动"><a href="#10-验证启动" class="headerlink" title="10.验证启动"></a>10.验证启动</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bin/sqoop list-databases \</span><br><span class="line"> --connect jdbc:mysql://node1:3306/ \</span><br><span class="line"> --username root --password hadoop</span><br></pre></td></tr></table></figure>
+<p> <img src="/../images/204.png" class="lazyload" data-srcset="/../images/204.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 204"></p>
+<h2 id="（三）Sqoop导入"><a href="#（三）Sqoop导入" class="headerlink" title="（三）Sqoop导入"></a>（三）Sqoop导入</h2><h3 id="（1）Sqoop测试表数据-在mysql中创建数据库userdb-，然后执行并参考资料中的sql脚本。"><a href="#（1）Sqoop测试表数据-在mysql中创建数据库userdb-，然后执行并参考资料中的sql脚本。" class="headerlink" title="（1）Sqoop测试表数据 在mysql中创建数据库userdb ，然后执行并参考资料中的sql脚本。"></a>（1）Sqoop测试表数据 在mysql中创建数据库userdb ，然后执行并参考资料中的sql脚本。</h3><p>创建三张表: emp 雇员表、 emp_add 雇员地址表、 emp_conn 雇员联系表。<br><img src="/../images/205.png" class="lazyload" data-srcset="/../images/205.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 205"></p>
+<h3 id="（2）全量导入mysql表数据到HDFS"><a href="#（2）全量导入mysql表数据到HDFS" class="headerlink" title="（2）全量导入mysql表数据到HDFS"></a>（2）全量导入mysql表数据到HDFS</h3><p>下面的命令用于从MySQL数据库服务器中的emp表导入HDFS</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#example1-mysql-hdfs-start bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--delete-target-dir \ </span><br><span class="line">--target-dir /sqoop/sqoopresult \ </span><br><span class="line">--table emp --m 1</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/206.png" class="lazyload" data-srcset="/../images/206.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 206"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#example2-mysql-hdfs-terminated </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--target-dir /sqoop/sqoopresult2 \ </span><br><span class="line">--fields-terminated-by &#x27;\t&#x27; \ </span><br><span class="line">--table emp --m 1</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/207.png" class="lazyload" data-srcset="/../images/207.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 207"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#example3-mysql-hdfs-split</span><br><span class="line">bin/sqoop import \</span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \</span><br><span class="line">--username root \</span><br><span class="line">--password hadoop \</span><br><span class="line">--target-dir /sqoop/sqoopresult3 \</span><br><span class="line">--fields-terminated-by &#x27;\t&#x27; \</span><br><span class="line">--split-by id \</span><br><span class="line">--table emp --m 2</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/208.png" class="lazyload" data-srcset="/../images/208.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 208"></p>
+<h3 id="（3）全量导入mysql表数据到HIVE"><a href="#（3）全量导入mysql表数据到HIVE" class="headerlink" title="（3）全量导入mysql表数据到HIVE"></a>（3）全量导入mysql表数据到HIVE</h3><p>先复制表结构到hive中再导入数据，在hive中新建数据库sqoop_test用于测试。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create database if not exists sqoop_test comment &quot;this is sqoop db&quot; with dbproperties(&#x27;createdBy&#x27;=&#x27;yzl&#x27;); </span><br><span class="line">use sqoop_test; </span><br><span class="line">show tables; </span><br><span class="line">desc formatted emp_add_sp;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>将关系型数据的表结构复制到hive中<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#example4-1-mysql-hive-structure </span><br><span class="line">bin/sqoop create-hive-table \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--table emp_add \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--hive-table sqoop_test.emp_add_sp</span><br></pre></td></tr></table></figure></li>
+<li>从关系数据库导入文件到hive中<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#example4-2-mysql-hive-data </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--table emp_add \ </span><br><span class="line">--hive-table sqoop_test.emp_add_sp \ </span><br><span class="line">--hive-import \ </span><br><span class="line">--m 1</span><br></pre></td></tr></table></figure>
+<img src="/../images/209.png" class="lazyload" data-srcset="/../images/209.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 209"></li>
+</ul>
+<h3 id="（4）导入表数据子集-where过滤"><a href="#（4）导入表数据子集-where过滤" class="headerlink" title="（4）导入表数据子集(where过滤)"></a>（4）导入表数据子集(where过滤)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#example6-mysql-hdfs-where </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--where &quot;city =&#x27;sec-bad&#x27;&quot; \ </span><br><span class="line">--target-dir /sqoop/wherequery \ </span><br><span class="line">--table emp_add --m 1</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/210.png" class="lazyload" data-srcset="/../images/210.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 210"></p>
+<h3 id="（5）导入表数据子集-query查询"><a href="#（5）导入表数据子集-query查询" class="headerlink" title="（5）导入表数据子集(query查询)"></a>（5）导入表数据子集(query查询)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#example7-mysql-hdfs-query </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ --password hadoop \ </span><br><span class="line">--target-dir /sqoop/wherequery2 \ </span><br><span class="line">--query &#x27;select id,name,deg from emp WHERE id&gt;1203 and $CONDITIONS&#x27; \ </span><br><span class="line">--split-by id \ </span><br><span class="line">--fields-terminated-by &#x27;\001&#x27; \ </span><br><span class="line">--m 2</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/211.png" class="lazyload" data-srcset="/../images/211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 211"></p>
+<h3 id="（6）增量导入"><a href="#（6）增量导入" class="headerlink" title="（6）增量导入"></a>（6）增量导入</h3><p>Append模式增量导入<br>执行以下指令先将我们之前的数据导入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#example8-1-mysql-hdfs-append </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--target-dir /sqoop/appendresult \ </span><br><span class="line">--table emp --m 1</span><br></pre></td></tr></table></figure>
+<p>使用hdfs dfs -cat查看生成的数据文件，发现数据已经导入到hdfs中 然后在mysql的emp表中插入2条数据:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into `userdb`.`emp` (`id`, `name`, `deg`, `salary`, `dept`) values (&#x27;1206&#x27;, &#x27;allen&#x27;, &#x27;admin&#x27;, &#x27;30000&#x27;, &#x27;tp&#x27;); </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into `userdb`.`emp` (`id`, `name`, `deg`, `salary`, `dept`) values (&#x27;1207&#x27;, &#x27;woon&#x27;, &#x27;admin&#x27;, &#x27;40000&#x27;, &#x27;tp&#x27;);</span><br></pre></td></tr></table></figure>
+<p>执行如下的指令，实现增量的导入:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#example8-2-mysql-hdfs-append </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--table emp --m 1 \ </span><br><span class="line">--target-dir /sqoop/appendresult \ </span><br><span class="line">--incremental append \ </span><br><span class="line">--check-column id \ </span><br><span class="line">--last-value 1205</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/212.png" class="lazyload" data-srcset="/../images/212.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 212"></p>
+<h2 id="（四）Lastmodified模式增量导入"><a href="#（四）Lastmodified模式增量导入" class="headerlink" title="（四）Lastmodified模式增量导入"></a>（四）Lastmodified模式增量导入</h2><h3 id="（1）首先创建一个customer表，指定一个时间戳字段："><a href="#（1）首先创建一个customer表，指定一个时间戳字段：" class="headerlink" title="（1）首先创建一个customer表，指定一个时间戳字段："></a>（1）首先创建一个customer表，指定一个时间戳字段：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create table customertest(id int,name varchar(20),last_mod timestamp default current_timestamp on update current_timestamp);</span><br></pre></td></tr></table></figure>
+<p>此处的时间戳设置为在数据的产生和更新时都会发生改变。</p>
+<h3 id="（2）插入如下记录"><a href="#（2）插入如下记录" class="headerlink" title="（2）插入如下记录:"></a>（2）插入如下记录:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">insert into customertest(id,name) values(1,&#x27;neil&#x27;); </span><br><span class="line">insert into customertest(id,name) values(2,&#x27;jack&#x27;); </span><br><span class="line">insert into customertest(id,name) values(3,&#x27;martin&#x27;); </span><br><span class="line">insert into customertest(id,name) values(4,&#x27;tony&#x27;); </span><br><span class="line">insert into customertest(id,name) values(5,&#x27;eric&#x27;);</span><br></pre></td></tr></table></figure>
+<h3 id="（3）此时执行sqoop指令将数据导入hdfs"><a href="#（3）此时执行sqoop指令将数据导入hdfs" class="headerlink" title="（3）此时执行sqoop指令将数据导入hdfs:"></a>（3）此时执行sqoop指令将数据导入hdfs:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#example9-1-mysql-hdfs-Lastmodified </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--target-dir /sqoop/lastmodifiedresult \ </span><br><span class="line">--table customertest --m 1</span><br></pre></td></tr></table></figure>
+<h3 id="（4）再次插入一条数据进入customertest表"><a href="#（4）再次插入一条数据进入customertest表" class="headerlink" title="（4）再次插入一条数据进入customertest表"></a>（4）再次插入一条数据进入customertest表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into customertest(id,name) values(6,&#x27;james&#x27;)</span><br></pre></td></tr></table></figure>
+<h3 id="（5）使用incremental的方式进行增量的导入"><a href="#（5）使用incremental的方式进行增量的导入" class="headerlink" title="（5）使用incremental的方式进行增量的导入:"></a>（5）使用incremental的方式进行增量的导入:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#example9-2-mysql-hdfs-Lastmodified </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--table customertest \ </span><br><span class="line">--target-dir /sqoop/lastmodifiedresult \ </span><br><span class="line">--check-column last_mod \ </span><br><span class="line">--incremental lastmodified \ </span><br><span class="line">--last-value &quot;2019-05-28 18:42:06&quot; \ </span><br><span class="line">--m 1 \ --append</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/213.png" class="lazyload" data-srcset="/../images/213.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 213"></p>
+<h2 id="（五）Lastmodified模式-append、merge-key"><a href="#（五）Lastmodified模式-append、merge-key" class="headerlink" title="（五）Lastmodified模式:append、merge-key"></a>（五）Lastmodified模式:append、merge-key</h2><p>使用lastmodified模式进行增量处理要指定增量数据是以append模式(附加) 和merge-key(合并)模式添加 。</p>
+<p>下面演示使用merge-by的模式进行增量更新 ：</p>
+<h3 id="（1）我们去更新-id为1的name字段。"><a href="#（1）我们去更新-id为1的name字段。" class="headerlink" title="（1）我们去更新 id为1的name字段。"></a>（1）我们去更新 id为1的name字段。</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update customertest set name = &#x27;Neil&#x27; where id = 1;</span><br></pre></td></tr></table></figure>
+<p>更新之后，这条数据的时间戳会更新为更新数据时的系统时间。</p>
+<h3 id="（2）执行如下指令，把id字段作为merge-key"><a href="#（2）执行如下指令，把id字段作为merge-key" class="headerlink" title="（2）执行如下指令，把id字段作为merge-key:"></a>（2）执行如下指令，把id字段作为merge-key:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#example10-mysql-hdfs-merge-key </span><br><span class="line">bin/sqoop import \ </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \ </span><br><span class="line">--username root \ </span><br><span class="line">--password hadoop \ </span><br><span class="line">--table customertest \ </span><br><span class="line">--target-dir /sqoop/lastmodifiedresult \ </span><br><span class="line">--check-column last_mod \ </span><br><span class="line">--incremental lastmodified \ </span><br><span class="line">--last-value &quot;2019-05-28 18:42:06&quot; \ </span><br><span class="line">--m 1 \ </span><br><span class="line">--merge-key id</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/214.png" class="lazyload" data-srcset="/../images/214.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 214"></p>
+<h2 id="（六）sqoop导出"><a href="#（六）sqoop导出" class="headerlink" title="（六）sqoop导出"></a>（六）sqoop导出</h2><h3 id="（1）准备HDFS数据"><a href="#（1）准备HDFS数据" class="headerlink" title="（1）准备HDFS数据"></a>（1）准备HDFS数据</h3><p>在HDFS文件系统中“&#x2F;emp&#x2F;”目录的下创建一个文件emp_data.txt：mkdir &#x2F;export&#x2F;data&#x2F;sqoop-data&#x2F;emp&#x2F;</p>
+<p>vim emp_data.txt 添加如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1201,gopal,manager,50000,TP</span><br><span class="line">1202,manisha,preader,50000,TP</span><br><span class="line">1203,kalil,php dev,30000,AC</span><br><span class="line">1204,prasanth,php dev,30000,AC</span><br><span class="line">1205,kranthi,admin,20000,TP</span><br><span class="line">1206,satishp,grpdes,20000,GR</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/215.png" class="lazyload" data-srcset="/../images/215.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 215"><br>上传至hdfs</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hadoop fs -mkdir /sqoop/emp_data</span><br><span class="line">hadoop fs -put emp_data.txt /sqoop/emp_data</span><br></pre></td></tr></table></figure>
+<h3 id="（2）手动创建mysql中的目标表"><a href="#（2）手动创建mysql中的目标表" class="headerlink" title="（2）手动创建mysql中的目标表"></a>（2）手动创建mysql中的目标表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; use userdb;</span><br><span class="line">mysql&gt; create table employee ( id int not null primary key, name varchar(20), deg varchar(20),salary int,dept varchar(10));</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/216.png" class="lazyload" data-srcset="/../images/216.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 216"></p>
+<h3 id="（3）执行导出命令："><a href="#（3）执行导出命令：" class="headerlink" title="（3）执行导出命令："></a>（3）执行导出命令：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bin/sqoop export --connect jdbc:mysql://node1:33</span><br><span class="line">06/userdb --username root --password hadoop --table employee1 --columns id,name,deg,salary,dept --export-dir /sqoop/emp_data/</span><br></pre></td></tr></table></figure>
+<h2 id="（七）更新导出（updateonly模式）"><a href="#（七）更新导出（updateonly模式）" class="headerlink" title="（七）更新导出（updateonly模式）"></a>（七）更新导出（updateonly模式）</h2><h3 id="（1）准备HDFS数据-1"><a href="#（1）准备HDFS数据-1" class="headerlink" title="（1）准备HDFS数据"></a>（1）准备HDFS数据</h3><p>在HDFS文件系统中&#x2F;sqoop&#x2F;updateonly_1&#x2F;目录的下创建一个文件updateonly_1.txt：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1201,gopal,manager,50000</span><br><span class="line">1202,manisha,preader,50000</span><br><span class="line">1203,kalil,php dev,30000</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/217.png" class="lazyload" data-srcset="/../images/217.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 217"></p>
+<h3 id="（2）手动创建mysql中的目标表-1"><a href="#（2）手动创建mysql中的目标表-1" class="headerlink" title="（2）手动创建mysql中的目标表"></a>（2）手动创建mysql中的目标表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; USE userdb;</span><br><span class="line">mysql&gt; CREATE TABLE updateonly ( id INT NOT NULL PRIMARY KEY,  name VARCHAR(20), deg VARCHAR(20),salary INT);</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/218.png" class="lazyload" data-srcset="/../images/218.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 218"></p>
+<h3 id="（3）先执行全部导出操作"><a href="#（3）先执行全部导出操作" class="headerlink" title="（3）先执行全部导出操作"></a>（3）先执行全部导出操作</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bin/sqoop export </span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb </span><br><span class="line">--username root </span><br><span class="line">--password hadoop </span><br><span class="line">--table allowinsert </span><br><span class="line">--export-dir /sqoop/allowinsert_1/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看此时的数据<br><img src="/../images/219.png" class="lazyload" data-srcset="/../images/219.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 219"></li>
+</ul>
+<h3 id="（4）新增文件"><a href="#（4）新增文件" class="headerlink" title="（4）新增文件"></a>（4）新增文件</h3><p>创建文件allowinsert_2.txt。修改前三条数据并且新增了一条记录。上传至 &#x2F;sqoop&#x2F;allowinsert_2&#x2F;目录下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1201,gopal,manager,1212</span><br><span class="line">1202,manisha,preader,1313</span><br><span class="line">1203,kalil,php dev,1414</span><br><span class="line">1204,allen,java,1515</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/220.png" class="lazyload" data-srcset="/../images/220.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 220"><br>执行更新导出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">bin/sqoop export \</span><br><span class="line">--connect jdbc:mysql://node1:3306/userdb \</span><br><span class="line">--username root --password hadoop \</span><br><span class="line">--table allowinsert \</span><br><span class="line">--export-dir /sqoop/allowinsert_2/ \</span><br><span class="line">--update-key id \</span><br><span class="line">--update-mode allowinsert</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看最终结果<br><img src="/../images/221.png" class="lazyload" data-srcset="/../images/221.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图 221"></li>
+</ul>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-19T09:25:18+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 19, 2023</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/06/19/sqoop/&title=sqoop - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/06/19/sqoop/&title=sqoop - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/06/19/sqoop/&title=sqoop - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/06/19/Flume/'>
+          <p class='title'>Flume<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Flume1、下载flume的gz包1Flume下载页面：http://flume.apache.org/download.html
+2.Flume下载页面：http://flume.apach...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/06/19/sqoop/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2683,92 +2748,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89sqoop%E4%BB%8B%E7%BB%8D"><span class="toc-text">（一）sqoop介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89sqoop%E5%AE%89%E8%A3%85"><span class="toc-text">（二）sqoop安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1"><span class="toc-text">1.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8A%E4%BC%A0%E5%8E%8B%E7%BC%A9%E5%8C%85sqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz"><span class="toc-text">2.上传压缩包sqoop-1.4.6.bin__hadoop-2.0.4-alpha.tar.gz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%A7%A3%E5%8E%8Bsqoop-1-4-6-bin-hadoop-2-0-4-alpha-tar-gz"><span class="toc-text">3.解压sqoop-1.4.6.bin_hadoop-2.0.4-alpha.tar.gz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%AE%BE%E7%BD%AE%E8%BD%AF%E9%93%BE%E6%8E%A5"><span class="toc-text">4.设置软链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">5.配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">6.重新加载环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9%EF%BC%9A"><span class="toc-text">7.配置文件修改：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E4%BF%AE%E6%94%B9sqoop-env-sh"><span class="toc-text">8.修改sqoop-env.sh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%8A%A0%E5%85%A5mysql%E7%9A%84jdbc%E9%A9%B1%E5%8A%A8%E5%8C%85"><span class="toc-text">9.加入mysql的jdbc驱动包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E9%AA%8C%E8%AF%81%E5%90%AF%E5%8A%A8"><span class="toc-text">10.验证启动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89Sqoop%E5%AF%BC%E5%85%A5"><span class="toc-text">（三）Sqoop导入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Sqoop%E6%B5%8B%E8%AF%95%E8%A1%A8%E6%95%B0%E6%8D%AE-%E5%9C%A8mysql%E4%B8%AD%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93userdb-%EF%BC%8C%E7%84%B6%E5%90%8E%E6%89%A7%E8%A1%8C%E5%B9%B6%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%E4%B8%AD%E7%9A%84sql%E8%84%9A%E6%9C%AC%E3%80%82"><span class="toc-text">（1）Sqoop测试表数据 在mysql中创建数据库userdb ，然后执行并参考资料中的sql脚本。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%85%A8%E9%87%8F%E5%AF%BC%E5%85%A5mysql%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%88%B0HDFS"><span class="toc-text">（2）全量导入mysql表数据到HDFS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%85%A8%E9%87%8F%E5%AF%BC%E5%85%A5mysql%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%88%B0HIVE"><span class="toc-text">（3）全量导入mysql表数据到HIVE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E5%AF%BC%E5%85%A5%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%AD%90%E9%9B%86-where%E8%BF%87%E6%BB%A4"><span class="toc-text">（4）导入表数据子集(where过滤)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E5%AF%BC%E5%85%A5%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%AD%90%E9%9B%86-query%E6%9F%A5%E8%AF%A2"><span class="toc-text">（5）导入表数据子集(query查询)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%886%EF%BC%89%E5%A2%9E%E9%87%8F%E5%AF%BC%E5%85%A5"><span class="toc-text">（6）增量导入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89Lastmodified%E6%A8%A1%E5%BC%8F%E5%A2%9E%E9%87%8F%E5%AF%BC%E5%85%A5"><span class="toc-text">（四）Lastmodified模式增量导入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E9%A6%96%E5%85%88%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAcustomer%E8%A1%A8%EF%BC%8C%E6%8C%87%E5%AE%9A%E4%B8%80%E4%B8%AA%E6%97%B6%E9%97%B4%E6%88%B3%E5%AD%97%E6%AE%B5%EF%BC%9A"><span class="toc-text">（1）首先创建一个customer表，指定一个时间戳字段：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%8F%92%E5%85%A5%E5%A6%82%E4%B8%8B%E8%AE%B0%E5%BD%95"><span class="toc-text">（2）插入如下记录:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%AD%A4%E6%97%B6%E6%89%A7%E8%A1%8Csqoop%E6%8C%87%E4%BB%A4%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hdfs"><span class="toc-text">（3）此时执行sqoop指令将数据导入hdfs:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E5%86%8D%E6%AC%A1%E6%8F%92%E5%85%A5%E4%B8%80%E6%9D%A1%E6%95%B0%E6%8D%AE%E8%BF%9B%E5%85%A5customertest%E8%A1%A8"><span class="toc-text">（4）再次插入一条数据进入customertest表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E4%BD%BF%E7%94%A8incremental%E7%9A%84%E6%96%B9%E5%BC%8F%E8%BF%9B%E8%A1%8C%E5%A2%9E%E9%87%8F%E7%9A%84%E5%AF%BC%E5%85%A5"><span class="toc-text">（5）使用incremental的方式进行增量的导入:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89Lastmodified%E6%A8%A1%E5%BC%8F-append%E3%80%81merge-key"><span class="toc-text">（五）Lastmodified模式:append、merge-key</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%88%91%E4%BB%AC%E5%8E%BB%E6%9B%B4%E6%96%B0-id%E4%B8%BA1%E7%9A%84name%E5%AD%97%E6%AE%B5%E3%80%82"><span class="toc-text">（1）我们去更新 id为1的name字段。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%89%A7%E8%A1%8C%E5%A6%82%E4%B8%8B%E6%8C%87%E4%BB%A4%EF%BC%8C%E6%8A%8Aid%E5%AD%97%E6%AE%B5%E4%BD%9C%E4%B8%BAmerge-key"><span class="toc-text">（2）执行如下指令，把id字段作为merge-key:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89sqoop%E5%AF%BC%E5%87%BA"><span class="toc-text">（六）sqoop导出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%87%86%E5%A4%87HDFS%E6%95%B0%E6%8D%AE"><span class="toc-text">（1）准备HDFS数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BAmysql%E4%B8%AD%E7%9A%84%E7%9B%AE%E6%A0%87%E8%A1%A8"><span class="toc-text">（2）手动创建mysql中的目标表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%89%A7%E8%A1%8C%E5%AF%BC%E5%87%BA%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-text">（3）执行导出命令：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%83%EF%BC%89%E6%9B%B4%E6%96%B0%E5%AF%BC%E5%87%BA%EF%BC%88updateonly%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="toc-text">（七）更新导出（updateonly模式）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%87%86%E5%A4%87HDFS%E6%95%B0%E6%8D%AE-1"><span class="toc-text">（1）准备HDFS数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BAmysql%E4%B8%AD%E7%9A%84%E7%9B%AE%E6%A0%87%E8%A1%A8-1"><span class="toc-text">（2）手动创建mysql中的目标表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%85%88%E6%89%A7%E8%A1%8C%E5%85%A8%E9%83%A8%E5%AF%BC%E5%87%BA%E6%93%8D%E4%BD%9C"><span class="toc-text">（3）先执行全部导出操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E6%96%B0%E5%A2%9E%E6%96%87%E4%BB%B6"><span class="toc-text">（4）新增文件</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2776,6 +2780,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3257,7 +3262,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/06/19/sqoop/","name":"sqoop"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"sqoop","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/06/19/sqoop/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/06/19/sqoop/","wordCount":0,"datePublished":"2023-06-19T01:14:06.063Z","dateModified":"2023-06-19T01:25:18.576Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
